@@ -1,0 +1,83 @@
+
+/* Default styles for all screen sizes */
+
+body {
+    font-family: Arial;
+    text-align: center;
+    margin: 50px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inputbox {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.button-sec {
+    display: flex;
+    justify-content: space-between;;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.register-btn {
+    background-color: rgb(21, 80, 144);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 48%;
+}
+
+.signin-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 48%;
+}
+
+.label-container{
+    display: flex;
+    font-size: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 8px;
+
+}
+
+.row > input::after{
+    border-color: blue;
+}
+
+#register-box{
+    background-color: rgb(21, 80, 144);
+    border: none;
+    color:white;
+    font-weight: bold;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: row;
+    }
+}
